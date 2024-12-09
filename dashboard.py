@@ -54,11 +54,3 @@ st.write("### Komposisi Penjualan (Pie Chart)")
 fig, ax = plt.subplots()
 ax.pie(filtered_data["Penjualan"], labels=filtered_data["Bulan"], autopct="%1.1f%%", colors=sns.color_palette("pastel"))
 st.pyplot(fig)
-
-# Layout Expander
-with st.expander("Penjelasan Dashboard"):
-    st.write("""
-    - Dashboard ini terdiri dari 3 grafik utama: Bar Chart, Line Chart, dan Pie Chart.
-    - Terdapat widget untuk memilih grafik, memfilter data, dan menampilkan data.
-    - Layout terdiri dari sidebar, kolom untuk grafik, dan expander untuk deskripsi tambahan.
-    """)
